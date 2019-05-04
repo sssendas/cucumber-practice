@@ -29,7 +29,7 @@ public class loginStepStepdefinition
 	@Then("^Click to Login Area$")
 	public void click_to_login()
 	{
-		WebElement element = driver.findElement(By.xpath("//a[@id='nav-link-yourAccount']"));
+		WebElement element = driver.findElement(By.xpath("//span[text()='Hello, Sign in']"));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 		System.out.println("Clicked on login area to login");
