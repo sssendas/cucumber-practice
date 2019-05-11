@@ -1,5 +1,7 @@
 package stepdefinitions;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import io.cucumber.datatable.DataTable;
 import utilities.UIUtils;
 
 public class loginStepStepdefinition
@@ -92,11 +95,28 @@ public class loginStepStepdefinition
 		System.out.println("Clicked on sign-in button after passing password");
 	}
 	
-	@Then("^Close the browser$")
-	public void quit_browser()
+	
+	@Then("^Enter below as username$")
+	public void enter_username(DataTable data)
 	{
-		driver.quit();
-		System.out.println("Closed the browser after test run");
+		List<List<String>> rawData = data.cells();
+		String userName = rawData.get(0).get(0).toString();
+		WebElement element = driver.findElement(By.xpath("//input[@id='ap_email']"));
+		wait.until(ExpectedConditions.visibilityOf(element));
+		element.sendKeys(userName);
+		System.out.println("Passed "+userName+" as User Name");
+		
+	}
+	
+	@Then("^Enter below as password$")
+	public void enter_password(DataTable data)
+	{
+		List<List<String>> rawData = data.cells();
+		String password = rawData.get(0).get(0).toString();
+		WebElement element = driver.findElement(By.xpath("//input[@id='ap_password']"));
+		wait.until(ExpectedConditions.visibilityOf(element));
+		element.sendKeys(password);
+		System.out.println("Passed "+password+" as User Name");
 	}
 
 }

@@ -1,68 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58289" started-at="2019-05-06T18:26:00Z" finished-at="2019-05-06T18:26:59Z">
+  <suite name="Default suite" duration-ms="23218" started-at="2019-05-11T19:33:29Z" finished-at="2019-05-11T19:33:52Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MyRunnerClass@60c6f5b]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="58289" started-at="2019-05-06T18:26:00Z" finished-at="2019-05-06T18:26:59Z">
+    <test name="Default test" duration-ms="23218" started-at="2019-05-11T19:33:29Z" finished-at="2019-05-11T19:33:52Z">
       <class name="runner.MyRunnerClass">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.MyRunnerClass@60c6f5b]" name="setUpClass" is-config="true" duration-ms="264" started-at="2019-05-06T18:26:00Z" finished-at="2019-05-06T18:26:01Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.MyRunnerClass@60c6f5b]" name="setUpClass" is-config="true" duration-ms="171" started-at="2019-05-11T19:33:29Z" finished-at="2019-05-11T19:33:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MyRunnerClass@60c6f5b]" name="runScenario" duration-ms="26287" started-at="2019-05-06T18:26:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-05-06T18:26:27Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MyRunnerClass@60c6f5b]" name="runScenario" duration-ms="22901" started-at="2019-05-11T19:33:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-05-11T19:33:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login to Amazon.in scenario test"]]>
+                <![CDATA["This scenario is to test GitHub.com with DataTable with Map concept"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["This is to test Amazon.in Login functionality"]]>
+                <![CDATA["This feature is to test GitHub.com with DataTable with Map concept"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MyRunnerClass@60c6f5b]" name="runScenario" duration-ms="17309" started-at="2019-05-06T18:26:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-05-06T18:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login to Amazon.in scenario test"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["This is to test Amazon.in Login functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MyRunnerClass@60c6f5b]" name="runScenario" duration-ms="14169" started-at="2019-05-06T18:26:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-05-06T18:26:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login to Amazon.in scenario test"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["This is to test Amazon.in Login functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.MyRunnerClass@60c6f5b]" name="tearDownClass" is-config="true" duration-ms="151" started-at="2019-05-06T18:26:59Z" finished-at="2019-05-06T18:26:59Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.MyRunnerClass@60c6f5b]" name="tearDownClass" is-config="true" duration-ms="82" started-at="2019-05-11T19:33:52Z" finished-at="2019-05-11T19:33:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

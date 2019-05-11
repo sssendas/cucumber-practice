@@ -49,6 +49,15 @@ public class UIUtils
 				System.setProperty("webdriver.chrome.driver","src/main/resources/drivers/chromedriver.exe");
 				ChromeOptions chops = new ChromeOptions();
 				chops.addArguments("--headless");
+				chops.addArguments("--disable-gpu");
+				chops.addArguments("--disable-extensions");
+				chops.addArguments("--window-size=1920,1080");
+				chops.setExperimentalOption("useAutomationExtension", false);
+				chops.addArguments("--proxy-server='direct://'");
+				chops.addArguments("--proxy-bypass-list=*");
+				chops.addArguments("--start-maximized");
+				
+
 				
 //				or
 //				chops.setHeadless(true);
@@ -61,6 +70,12 @@ public class UIUtils
 				System.setProperty("webdriver.gecko.driver","src/main/resources/drivers/geckodriver.exe");
 				FirefoxOptions ffops = new FirefoxOptions();
 				ffops.setHeadless(true);
+				ffops.addArguments("--disable-gpu");
+				ffops.addArguments("--disable-extensions");
+				ffops.addArguments("--window-size=1920,1080");
+				ffops.addArguments("--proxy-server='direct://'");
+				ffops.addArguments("--proxy-bypass-list=*");
+				ffops.addArguments("--start-maximized");
 				
 //				or
 //				ffops.addArguments("--headless");
