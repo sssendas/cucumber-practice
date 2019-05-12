@@ -1,3 +1,4 @@
+@Smoke @Regression
 Feature: This is to test Amazon.in Login functionality 
 
 #without 'Scenario-Outline' and 'Examples' keywords

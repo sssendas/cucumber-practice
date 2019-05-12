@@ -1,3 +1,4 @@
+@Smoke
 Feature: This feature is to test GitHub.com with DataTable with Map concept
 
 Scenario: This scenario is to test GitHub.com with DataTable with Map concept

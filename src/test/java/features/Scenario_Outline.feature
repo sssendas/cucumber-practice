@@ -1,3 +1,4 @@
+@Smoke
 Feature: This is to test Amazon.in Login functionality with sceanrio-outline concept 
 
 #with 'Scenario-Outline' and 'Examples' keywords

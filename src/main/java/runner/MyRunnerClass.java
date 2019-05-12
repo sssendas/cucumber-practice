@@ -16,7 +16,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 					glue = {"stepdefinitions"},
 					plugin = {"pretty","html:target/cucumber","json:target/cucumber/Cucumber_json_report.json"},
 					dryRun = false,
-					monochrome = true)
+					monochrome = true,
+					tags = {"@Smoke"})
 
 @Test
 public class MyRunnerClass extends AbstractTestNGCucumberTests
