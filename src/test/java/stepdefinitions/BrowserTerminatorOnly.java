@@ -11,6 +11,7 @@ public class BrowserTerminatorOnly
 	public void quit_browser()
 	{
 		WebDriver driver = UIUtils.driver;
+		UIUtils.driver=null;
 		driver.quit();
 		System.out.println("Closed the browser after test run");
 	}

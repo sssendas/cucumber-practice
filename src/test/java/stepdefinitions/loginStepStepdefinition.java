@@ -22,7 +22,16 @@ public class loginStepStepdefinition
 	@Given("^Load Browser$")
 	public void loadBrowser()
 	{
-		driver = new UIUtils().driverInitiator();
+		if(UIUtils.driver==null)
+		{
+			driver = new UIUtils().driverInitiator();
+		}
+		else
+		{
+			driver = UIUtils.driver;
+		}
+		
+		
 		String URL = "https://www.amazon.in";
 		driver.get(URL);
 		wait = new WebDriverWait(driver, 60);

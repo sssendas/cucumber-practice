@@ -24,15 +24,24 @@ public class GitHubFeature_StepDefinition
 	@Before
 	public void initiator()
 	{
-		driver = new UIUtils().driverInitiator();
-		ghUtils = new GitHub_Utils(driver);
+		System.out.println("Executing cucumber hook before each feature. Not a good thing to use.");
+
 	}
 	
 	@Given("Open Github URL")
 	public void open_GH_URL()
 	{
-//		driver = new UIUtils().driverInitiator();
-//		ghUtils = new GitHub_Utils(driver);
+//		
+		if(UIUtils.driver==null)
+		{
+			driver = new UIUtils().driverInitiator();
+		}
+		else
+		{
+			driver = UIUtils.driver;
+		}
+		
+		ghUtils = new GitHub_Utils(driver);
 		ghUtils.openURL();
 	}
 	
