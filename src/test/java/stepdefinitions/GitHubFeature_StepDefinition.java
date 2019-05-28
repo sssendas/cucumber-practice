@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
 
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -16,7 +15,6 @@ import utilities.UIUtils;
 
 public class GitHubFeature_StepDefinition 
 {
-	public static WebDriver driver = null;
 	public static GitHub_Utils ghUtils = null;
 	
 	
@@ -24,15 +22,14 @@ public class GitHubFeature_StepDefinition
 	@Before
 	public void initiator()
 	{
-		driver = new UIUtils().driverInitiator();
-		ghUtils = new GitHub_Utils(driver);
+		System.out.println("Executing cucumber hook before each feature. Not a good thing to use.");
+
 	}
 	
 	@Given("Open Github URL")
 	public void open_GH_URL()
-	{
-//		driver = new UIUtils().driverInitiator();
-//		ghUtils = new GitHub_Utils(driver);
+	{		
+		ghUtils = new GitHub_Utils();
 		ghUtils.openURL();
 	}
 	
