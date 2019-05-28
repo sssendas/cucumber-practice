@@ -13,9 +13,19 @@ public class GitHub_Utils
 	static WebDriver driver;
 	static WebDriverWait wait;
 	
-	public GitHub_Utils(WebDriver driver)
+	public GitHub_Utils()
 	{
-		GitHub_Utils.driver = driver;
+		
+		if(UIUtils.driver==null)
+			{
+				driver = new UIUtils().driverInitiator();
+			}
+			else
+			{
+				driver = UIUtils.driver;
+			}
+		
+//		GitHub_Utils.driver = UIUtils.driver;
 		wait = new WebDriverWait(driver,60);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
